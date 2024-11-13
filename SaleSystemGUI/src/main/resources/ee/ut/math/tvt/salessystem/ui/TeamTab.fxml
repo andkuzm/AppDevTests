@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ee.ut.math.tvt.salessystem.ui.controllers.TeamController">
+
+    <SplitPane dividerPositions="0.4" orientation="VERTICAL" prefHeight="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane maxHeight="195.0" maxWidth="557.0" prefHeight="214.0" prefWidth="555.0" styleClass="background_style" SplitPane.resizableWithParent="false">
+                <TitledPane alignment="CENTER" animated="false" collapsible="false" contentDisplay="BOTTOM" layoutX="-1.0" layoutY="-5.0" maxHeight="231.0" maxWidth="557.0" minHeight="235.0" minWidth="557.0" prefHeight="231.0" prefWidth="557.0" text="Team info" AnchorPane.bottomAnchor="-31.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-5.0">
+                    <content>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="184.0" prefWidth="555.0" styleClass="sub_background">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="10000.0" minWidth="10.0" prefWidth="97.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="10000.0" minWidth="10.0" prefWidth="153.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="10000.0" minWidth="1.0" prefWidth="245.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="45.0" minHeight="30.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="56.0" minHeight="26.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="27.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="63.0" minHeight="22.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Team name" />
+                                <Label text="Team leader" GridPane.rowIndex="1" />
+                                <Label text="Team leader email" GridPane.rowIndex="2" />
+                                <Label text="Team members" GridPane.rowIndex="3" />
+                                <Label text="${controller.name}" GridPane.columnIndex="1" />
+                                <Label text="${controller.leader}" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="${controller.mail}" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <TextArea fx:id="membersTextArea" editable="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <ImageView fitHeight="279.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="https://media.istockphoto.com/id/1343222790/vector/vector-design-template-teamwork-abstract-icon.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=uCDc20avfvPqfj_bODs2ZpXhQB3Q6oRCMGk8bFUY0SI=" />
+                           </image>
+                        </ImageView>
+                            </children>
+                        </GridPane>
+                    </content>
+                </TitledPane>
+            </AnchorPane>
+            <AnchorPane prefHeight="284.0" prefWidth="555.0" />
+        </items>
+    </SplitPane>
+</AnchorPane>

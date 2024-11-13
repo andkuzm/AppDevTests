@@ -1,0 +1,7 @@
+.idea
+.gradle
+build
+SaleSystemCLI/build
+SaleSystemGUI/build
+/backup/data up/pos.lck
+/backup/data up/pos.log
